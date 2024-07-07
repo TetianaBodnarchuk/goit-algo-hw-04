@@ -1,2 +1,2 @@
 def total_salary(path):
-    return
+    return print('Hello!')
