@@ -15,6 +15,6 @@ def get_cats_info(path) -> list[dict]:
         return list_cats
     except FileNotFoundError:
         print('Файл не знайдено.')
-
+        
 cats_info = get_cats_info(Path(__file__).parent)
 print(cats_info)
