@@ -14,6 +14,29 @@ def change_contact(args, contacts):
     contacts[name] = phone
     return "Contact updated."
 
+'''
+def add_contact(args, contacts):
+    try:
+        if len(args) != 2:
+            raise ValueError("Невірна кількість аргументів. Потрібно вказати ім'я та телефон.")
+        name, phone = args
+        contacts[name] = phone
+        return "Контакт додано."
+    except ValueError as e:
+        return str(e)
+def main():
+    contacts = {}
+    while True:
+        command = input("Введіть команду (add, change, exit): ")
+        if command == 'exit':
+            break
+        args = input("Введіть ім'я та телефон: ").split()
+        if command == 'add':
+            print(add_contact(args, contacts))
+if __name__ == "__main__":
+    main()
+'''
+
 def show_phone(args, contacts):
     name = args[0]
     if name in contacts:
