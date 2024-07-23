@@ -16,8 +16,8 @@ def change_contact(args, contacts):
 def show_phone(name, contacts):
     return contacts[name]
 
-def show_all(name, contacts):
-    return contacts[name]
+# def show_all(name, contacts):
+#     return contacts[name]
 
 def main():
     contacts = {}
