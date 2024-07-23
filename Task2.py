@@ -17,4 +17,4 @@ def get_cats_info(path) -> list[dict]:
         print('Файл не знайдено.')
         
 cats_info = get_cats_info(Path(__file__).parent)
-print(cats_info)
+print(*cats_info, sep='\n')
