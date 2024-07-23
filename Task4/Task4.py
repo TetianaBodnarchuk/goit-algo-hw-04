@@ -33,6 +33,12 @@ def main():
             print("How can I help you?")
         elif command == "add":
             print(add_contact(args, contacts))
+        elif command == "change":
+            print(add_contact(args, contacts))
+        elif command == "phone":
+            print(add_contact(args, contacts))
+        elif command == "all":
+            print(add_contact(args, contacts))
         else:
             print("Invalid command.")
 
