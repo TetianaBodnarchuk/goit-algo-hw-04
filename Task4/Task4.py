@@ -1,3 +1,4 @@
+
 def parse_input(user_input: str) -> tuple:
     cmd, *args = user_input.split()
     cmd = cmd.strip().lower()
@@ -13,11 +14,16 @@ def change_contact(args, contacts):
     contacts[name] = phone
     return "Contact updated."
 
-def show_phone(name, contacts):
-    return contacts[name]
+def show_phone(args, contacts):
+    name = args[0]
+    if name in contacts:
+        return contacts[name]
+    else:
+        return "This contact doesn't exist"
 
-# def show_all(name, contacts):
-#     return contacts[name]
+def show_all(args, contacts):
+    name, phone = args
+    return contacts[name]
 
 def main():
     contacts = {}
